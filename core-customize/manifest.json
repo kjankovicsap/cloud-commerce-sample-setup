@@ -3,7 +3,9 @@
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",  
-        "mediaconversionbackoffice"
+        "mediaconversionbackoffice",
+		"gigyabackoffice",
+		"gigyaloginaddon"
 	],
 	"useConfig": {
         "properties": [
@@ -47,6 +49,16 @@
 	"storefrontAddons":[ 
 	   { 
 		  "addon":"commerceorgsamplesaddon",
+		  "storefront":"yacceleratorstorefront",
+		  "template":"yacceleratorstorefront"
+	   },
+	   { 
+		  "addon":"gigyabackoffice",
+		  "storefront":"yacceleratorstorefront",
+		  "template":"yacceleratorstorefront"
+	   },
+	   { 
+		  "addon":"gigyaloginaddon",
 		  "storefront":"yacceleratorstorefront",
 		  "template":"yacceleratorstorefront"
 	   },
@@ -429,8 +441,7 @@
 	],
 	"tests": {
         "extensions": [
-            "kiwi",
-            "tiger"
+           
         ],
         "annotations": [
             "UnitTests",
